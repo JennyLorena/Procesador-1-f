@@ -34,6 +34,7 @@ entity nPc is
            clknPc : in  STD_LOGIC;
            rstnPc : in  STD_LOGIC;
            SalidanPc : out  STD_LOGIC_VECTOR (31 downto 0));
+			 
 end nPc;
 
 architecture Behavioral of nPc is
@@ -54,6 +55,6 @@ begin
 	
 	end process;
 	
-
+	
 end Behavioral;
 

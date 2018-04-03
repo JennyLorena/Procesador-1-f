@@ -17,19 +17,20 @@ Total CPU time to Xst completion: 0.20 secs
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/usuario pc/Proyecto1/nPc.vhd" in Library work.
-Entity <npc> compiled.
-Entity <npc> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/usuario pc/Proyecto1/InstruccionMemory.vhd" in Library work.
+Entity <instruccionmemory> compiled.
+ERROR:HDLParsers:1401 - "C:/Users/usuario pc/Proyecto1/InstruccionMemory.vhd" Line 62. Object Instruccio of mode OUT can not be read.
+ERROR:HDLParsers:800 - "C:/Users/usuario pc/Proyecto1/InstruccionMemory.vhd" Line 67. Type of Instruccio is incompatible with type of Instruccio.
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.28 secs
  
 --> 
 
-Total memory usage is 207280 kilobytes
+Total memory usage is 208304 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    2 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -4,30 +4,30 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> Parameter xsthdpdir set to C:/Users/usuario pc/Proyecto1/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.20 secs
+Total CPU time to Xst completion: 0.22 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/usuario pc/Proyecto1/nPc.vhd" in Library work.
-Entity <npc> compiled.
-Entity <npc> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/usuario pc/Proyecto1/InstruccionMemoria.vhd" in Library work.
+Entity <InstruccionMemoria> compiled.
+Entity <InstruccionMemoria> (Architecture <Behavioral>) compiled.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.26 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> 
 
-Total memory usage is 207280 kilobytes
+Total memory usage is 208432 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
