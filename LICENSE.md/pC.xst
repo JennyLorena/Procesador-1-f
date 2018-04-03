@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/usuario pc/Proyecto1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/usuario pc/Proyecto1/xst"
+elaborate
+-ifn pC.prj
+-ifmt mixed
