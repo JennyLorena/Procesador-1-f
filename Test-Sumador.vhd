@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   16:53:31 04/03/2018
+-- Create Date:   17:01:00 04/03/2018
 -- Design Name:   
--- Module Name:   C:/Users/usuario pc/Proyecto1/Test-InstruccionMemoria.vhd
+-- Module Name:   C:/Users/usuario pc/Proyecto1/Test-Sumador.vhd
 -- Project Name:  Proyecto1
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: InstruccionMemoria
+-- VHDL Test Bench Created by ISE for module: Sumador
 -- 
 -- Dependencies:
 -- 
@@ -27,35 +27,33 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
-use std.textio.all; 
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY Test-InstruccionMemoria IS
-END Test-InstruccionMemoria;
+ENTITY Test-Sumador IS
+END Test-Sumador;
  
-ARCHITECTURE behavior OF Test-InstruccionMemoria IS 
+ARCHITECTURE behavior OF Test-Sumador IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT InstruccionMemoria
+    COMPONENT Sumador
     PORT(
-         direccion : IN  std_logic_vector(31 downto 0);
-         instruccion : OUT  std_logic_vector(31 downto 0);
-         reset : IN  std_logic
+         Entrada1 : IN  std_logic_vector(31 downto 0);
+         Entrada2 : IN  std_logic_vector(31 downto 0);
+         Salida : OUT  std_logic_vector(31 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal direccion : std_logic_vector(31 downto 0) := (others => '0');
-   signal reset : std_logic := '0';
+   signal Entrada1 : std_logic_vector(31 downto 0) := (others => '0');
+   signal Entrada2 : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
-   signal instruccion : std_logic_vector(31 downto 0);
+   signal Salida : std_logic_vector(31 downto 0);
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
@@ -64,10 +62,10 @@ ARCHITECTURE behavior OF Test-InstruccionMemoria IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: InstruccionMemoria PORT MAP (
-          direccion => direccion,
-          instruccion => instruccion,
-          reset => reset
+   uut: Sumador PORT MAP (
+          Entrada1 => Entrada1,
+          Entrada2 => Entrada2,
+          Salida => Salida
         );
 
    -- Clock process definitions
@@ -83,10 +81,11 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      -- hold reset state for 100 ns.
-      wait for 100 ns;	
-
-      wait for <clock>_period*10;
+	
+			entrada1 <= x"00000001";
+			entrada2 <= x"00000011";
+	
+         
 
       -- insert stimulus here 
 

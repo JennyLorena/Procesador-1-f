@@ -23,35 +23,38 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="InstruccionMemoria.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="InstruccionMemoria.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="InstruccionMemoria.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="InstruccionMemory.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="InstruccionMemory.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="InstruccionMemory.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="nPc.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="nPc.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="nPc.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pC.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pC.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="pC.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sumador.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Sumador.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Sumador.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sumador_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test_sumador_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1522789945" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1522789945">
+    <transform xil_pn:end_ts="1522962368" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1522962368">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1522789945" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9044832904953873877" xil_pn:start_ts="1522789945">
+    <transform xil_pn:end_ts="1522962941" xil_pn:in_ck="3996332150174447041" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1522962941">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="Sumador.vhd"/>
+      <outfile xil_pn:name="Tes_Sumador.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1522962837" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7851715433169562914" xil_pn:start_ts="1522962837">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1522789945" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3418866178078708973" xil_pn:start_ts="1522789945">
+    <transform xil_pn:end_ts="1522962837" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8102618564697664608" xil_pn:start_ts="1522962837">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1522789945" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="3473637394977311614" xil_pn:start_ts="1522789945">
+    <transform xil_pn:end_ts="1522962368" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2515372559859751494" xil_pn:start_ts="1522962368">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
