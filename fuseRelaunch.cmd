@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/usuario pc/Proyecto1/InstruccionesMemoria_isim_beh.exe" -prj "C:/Users/usuario pc/Proyecto1/InstruccionesMemoria_beh.prj" "work.InstruccionesMemoria" 
