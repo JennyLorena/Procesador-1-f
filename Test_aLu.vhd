@@ -27,9 +27,9 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.All;
-use IEEE.NUMERIC_STD.ALL;
+--use IEEE.STD_LOGIC_ARITH.ALL;
+--use IEEE.STD_LOGIC_UNSIGNED.All;
+--use IEEE.NUMERIC_STD.ALL;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -53,16 +53,13 @@ ARCHITECTURE behavior OF Test_aLu IS
     
 
    --Inputs
-   signal Entrada_Uc : std_logic_vector(5 downto 0) := (others => '0');
-   signal Entrada_rF1 : std_logic_vector(31 downto 0) := (others => '0');
-   signal Entrada_rF2 : std_logic_vector(31 downto 0) := (others => '0');
+   signal Entrada_Uc : std_logic_vector(5 downto 0) := "000001";
+   signal Entrada_rF1 : std_logic_vector(31 downto 0) :=  "00000000000000000000000000000011";
+   signal Entrada_rF2 : std_logic_vector(31 downto 0) :=  "00000000000000000000000000000100";
 
  	--Outputs
    signal dwr_aLu : std_logic_vector(31 downto 0);
-   -- No clocks detected in port list. Replace <clock> below with 
-   -- appropriate port name 
- 
-   constant <clock>_period : time := 10 ns;
+   
  
 BEGIN
  
@@ -78,12 +75,8 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      
-		Entrada_rF1 <= x"00000004";
-		Entrada_rF2 <= x"00000002";
-		Entrada_Uc <= "000000";
-
-      wait;
+     
+     
    end process;
 
 END;

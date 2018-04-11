@@ -58,7 +58,7 @@ ARCHITECTURE behavior OF Tes_Sumador IS
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
-   constant <clock>_period : time := 10 ns;
+   --constant <clock>_period : time := 10 ns;
  
 BEGIN
  
@@ -74,19 +74,18 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-		entrada_sum1 <= x"00000002";
-		entrada_sum2 <= x"00000004";
+		entrada_sum1 <= x"00000001";
+		entrada_sum2 <= x"00000011";
 		
       -- hold reset state for 100 ns.
       wait for 30 ns;
-		entrada_sum1 <= x"00000004";
-		entrada_sum2 <= x"00000004";
+		entrada_sum1 <= x"00000100";
+		entrada_sum2 <= x"00000101";
 		wait for 30 ns;
-		entrada_sum1 <= x"00000008";
-		entrada_sum2 <= x"00000004";
+		entrada_sum1 <= x"00000110";
+		entrada_sum2 <= x"00000011";
 		wait for 30 ns;
-		entrada_sum1 <= x"000000010";
-		entrada_sum2 <= x"00000004";
+		
     
       wait;
    end process;

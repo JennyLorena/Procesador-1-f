@@ -43,7 +43,9 @@ begin
 
 	process(entrada_sum1,entrada_sum2)
 		begin
+		
 			salida_sumador <= entrada_sum1+entrada_sum2; 
+		
 		end process; 
 
 

@@ -65,7 +65,7 @@ ARCHITECTURE behavior OF Test_rF IS
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
-   constant <clock>_period : time := 10 ns;
+   --constant <clock>_period : time := 10 ns;
  
 BEGIN
  

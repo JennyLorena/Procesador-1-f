@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/usuario pc/Proyecto1/InstruccionesMemoria_isim_beh.exe" -prj "C:/Users/usuario pc/Proyecto1/InstruccionesMemoria_beh.prj" "work.InstruccionesMemoria" 
+-intstyle "ise" -incremental -o "E:/Proyecto1/Test_rF_isim_beh.exe" -prj "E:/Proyecto1/Test_rF_beh.prj" "work.Test_rF" 
